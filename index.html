@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madkathon - Code Playground</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #contenteditable {
+            width: 80%;
+            min-height: 100px;
+            border: 2px solid red;
+            padding: 10px;
+            margin-bottom: 20px;
+            outline: none;
+            text-align: left;
+        }
+
+        #sendButton {
+            background-color: red;
+            color: black;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .actionButton {
+            background-color: red;
+            color: black;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        hr {
+            background-color: red;
+            color: black; 
+            width: 100%; 
+            cursor: pointer;
+        }
+        h1, h3 { cursor: pointer;}
+    </style>
+</head>
+<body>
+    <h1>madkathon</h1>
+    <br>
+    <div id="contenteditable" contenteditable="true">
+        <!-- Contenteditable area -->
+    </div>
+   
+    <button class="actionButton" onclick="showUs()" id="sendButton">// Show us what u got </button> <br> <br> <br> <br>
+    <div>
+        <button class="actionButton" onclick="showEvents()">Events</button>
+        <button class="actionButton" onclick="showNewTricks()">New Tricks</button>
+        <button class="actionButton" onclick="showHires()">Hires</button>
+    </div>
+
+    <script>
+        function showUs() {
+            alert("Thanks for your effort, lets get leet !!!!");
+        }
+        
+        function showEvents() {
+            alert("Events button clicked!");
+        }
+
+        function showNewTricks() {
+            alert("New Tricks button clicked!");
+        }
+
+        function showHires() {
+            alert("Hires button clicked!");
+        }
+    </script>
+    <footer> <br>  <p><b>madkathon</b>  nbo top tier leet team</p></footer>
+</body>
+</html>
